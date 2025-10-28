@@ -1,0 +1,33 @@
+@import 'fonts';
+@import 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body {
+  background: @color-white;
+  color: @color-black;
+  font-family: 'Roboto';
+  font-weight: 300;
+  scroll-behavior: smooth;
+
+  @media (min-width: 1024px) and (max-width: 1920px) {
+    font-size: 1.1111111111vw;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.image {
+  width: 100%;
+}
