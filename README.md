@@ -20,7 +20,7 @@
 
 ## Как это написано?
 
-Данные в таблицу подгружаются с [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) через Axios.
+Данные в таблицу подгружаются с [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users) через Axios.
 
 Переключение между компонентами в Меню осуществляется с помощью Vue Router.
 
