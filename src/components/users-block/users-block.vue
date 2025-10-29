@@ -1,7 +1,7 @@
 <template>
     <div class="users">
         <div class="users__container">
-            <DataTable :value="users" paginator :rows="10">
+            <DataTable :value="users" paginator :rows="10" scrollable responsiveLayout="scroll">
                 <Column field="id" sortable header="ID" />
                 <Column field="name" sortable header="Name" />
                 <Column field="email" sortable header="Email" />
