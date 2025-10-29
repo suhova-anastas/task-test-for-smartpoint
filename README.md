@@ -1,54 +1,45 @@
-# .
+## Рада Вас приветствовать!
 
-This template should help get you started developing with Vue 3 in Vite.
+Меня зовут Анастасия Сухова, и я - Frontend разработчик.
+Сейчас вы читаете описание к моему проекту, который создан в качестве тестового задания для компании Смартпойнт на позицию Frontend-разработчик.
 
-## Recommended IDE Setup
+## Что он делает?
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Проект представляет собой страницу с тремя компонентами: Меню (хедер), Пользователи и Избранное.
 
-## Recommended Browser Setup
+В компоненте Пользователи представлена таблица пользователей с их данными.
+Вы можете добавить строку с конкретным пользователем в Избранное с помощью кнопки справа.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+![Меню и Пользователи](src/screenshoot-1.png)
 
-## Type Support for `.vue` Imports in TS
+Список избранных пользователей отображается в компоненте Избранное.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+![Меню и Избранное](src/screenshoot-2.png)
 
-## Customize configuration
+Переключение между компонентами осуществляется через Меню.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Как это написано?
 
-## Project Setup
+Данные в таблицу подгружаются с [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) через Axios.
+
+Переключение между компонентами в Меню осуществляется с помощью Vue Router.
+
+При добавлении пользователя в избранное его данные забрасываются в стор, а оттуда подгружаются в компонент Избранное. Осуществляется это с помощью Pinia. Стор находится в src/stores/favorites.ts
+
+Стили написаны на CSS и с использованием PrimeVue.
+
+## Какой стек?
+
+Стек: HTML, CSS, TypeScript, Vue 3, Composition API, Vue Router, Axios, Pinia, PrimeVue.
+
+## Установка
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Запуск проекта
 
 ```sh
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
